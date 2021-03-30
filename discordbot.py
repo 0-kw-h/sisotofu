@@ -21,8 +21,8 @@ async def DV(ctx):
 
 
 @bot.command()
-async def yukka(ctx):
-    y = 'ゆっかさんだー'
-    await client.send_messeage(messeage.channel, y)
+async def DV(ctx):
+    
+    await ctx.send(ｙ)
 
 bot.run(token)
