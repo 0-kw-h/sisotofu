@@ -21,4 +21,10 @@ async def DV(ctx):
     await ctx.send('殴らないで……')
 
 
+@bot.command()
+async def yukka(ctx):
+    await ctx.send('ゆっかさんだー')
+
+
+
 bot.run(token)
