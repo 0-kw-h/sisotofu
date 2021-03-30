@@ -5,8 +5,6 @@ import random
 
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN]
-yukkarep = ['ゆっかさんだー','殴らないで……']
-
 
 @bot.event
 async def on_command_error(ctx, error):
@@ -17,6 +15,7 @@ async def on_command_error(ctx, error):
 
 @bot.command()
 async def yukka(ctx):
+    yukkarep = ['ゆっかさんだー', '殴らないで……', 'ゆっかさん寝ましたか？']
     ya = random.choice(yukkarep)
     await ctx.send(ya)
 
