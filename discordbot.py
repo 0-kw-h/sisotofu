@@ -19,10 +19,14 @@ async def sisotofu(ctx):
 async def DV(ctx):
     await ctx.send('殴らないで……')
 
+@bot.command()
+async def yukka(ctx):
+    await ctx.send('ゆっかさんだー')
+
 
 @bot.command()
-async def dice(ctx, a: int,b: int):
-    await ctx.send(a*b)
+async def dice(ctx, a: int):
+    await ctx.send(random.randint(0,a))
 
 
 bot.run(token)
