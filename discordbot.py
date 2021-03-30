@@ -20,4 +20,9 @@ async def DV(ctx):
     await ctx.send('殴らないで……')
 
 
+@bot.command()
+async def dice(ctx):
+    await ctx.send(5*10)
+
+
 bot.run(token)
