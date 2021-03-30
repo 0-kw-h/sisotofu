@@ -21,8 +21,8 @@ async def DV(ctx):
 
 
 @bot.command()
-async def dice(ctx):
-    await ctx.send(5*10)
+async def dice(ctx, a: int,b: int):
+    await ctx.send(a*b)
 
 
 bot.run(token)
