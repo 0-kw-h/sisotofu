@@ -17,7 +17,8 @@ async def on_command_error(ctx, error):
 
 @bot.command()
 async def yukka(ctx):
-    await ctx.send(random.choice(yukkarep))
+    ya = random.choice(yukkarep)
+    await ctx.send(ya)
 
 
 bot.run(token)
