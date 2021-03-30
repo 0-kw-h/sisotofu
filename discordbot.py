@@ -19,15 +19,4 @@ async def sisotofu(ctx):
 async def DV(ctx):
     await ctx.send('殴らないで……')
 
-@bot.command()
-async def yukka(ctx):
-    yukka = 'ゆっかさんだー'
-    await client.send_messeage(messeage.channel yukka)
-
-@bot.command()
-async def dice(ctx):
-    info = parse('dice {}d{} {}', message.content)
-    res = 1
-    await ctx.send(res)
-
 bot.run(token)
