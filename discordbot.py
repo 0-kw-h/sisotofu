@@ -23,5 +23,36 @@ async def DV(ctx):
 async def yukka(ctx):
     await ctx.send('ゆっかさんだー')
 
+async def on_message(message):
+    # 開始ワード
+    if message.content.startswith('dice'):
+        # 送り主がBotではないか
+        if client.user != message.author:
+            info = parse('dice {}d{} {}', message.content)
+            if info:
+                if info[1].isdecimal() and info[0].isdecimal():
+                    dice_num = int(info[0])
+                    dice_size = int(info[1])
+                    key = info[2]
+                    # メッセージを書きます
+                    m = message.author.name + ' '
+                    if key == '一時的狂気':
+                        m = temp_madness()
+                    elif key == '不定の狂気':
+                        m = ind_madness()
+                    elif key == 'dice':
+                        m = simple_dice(dice_size, dice_num)
+                    else:
+                        chara = get_charactor(str(message.author))
+                        msg, result = judge(chara, key, dice_size, dice_num)
+                        m += msg
+                        if result:
+                            d = damage(chara, key)
+                        else:
+                            d = None
+                        if d is not None:
+                            m += '\nダメージ: ' + str(np.sum(d)) + ' = ' + str(d)
+                    # メッセージが送られてきたチャンネルへメッセージを送ります
+                    await client.send_message(message.channel, m)
 
 bot.run(token)
