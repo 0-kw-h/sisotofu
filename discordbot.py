@@ -20,9 +20,4 @@ async def DV(ctx):
     await ctx.send('殴らないで……')
 
 
-@bot.command()
-async def DV(ctx):
-    
-    await ctx.send(ｙ)
-
 bot.run(token)
