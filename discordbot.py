@@ -12,12 +12,4 @@ async def on_command_error(ctx, error):
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)
 
-
-@bot.command()
-async def yukka(ctx):
-    yukkarep = ['ゆっかさんだー', '殴らないで……', 'ゆっかさん寝ましたか？']
-    ya = random.choice(yukkarep)
-    await ctx.send(ya)
-
-
 bot.run(token)
