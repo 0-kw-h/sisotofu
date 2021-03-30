@@ -24,7 +24,7 @@ async def dice(ctx):
 
 @bot.command()
 async def sisotofu(ctx):
-    sisorep = ['くそがよぉ','泣いた','はらたつ']
+    sisorep = ['くそがよぉ','泣いた']
     sa = random.choice(sisorep)
     await ctx.send(sa)
 
@@ -35,7 +35,7 @@ async def stella(ctx):
 
 @bot.command()
 async def maha(ctx):
-    m = "まはさんなら大丈夫ですよ"
+    m = "まはさん"
     await ctx.send(m)
 
 @bot.command()
