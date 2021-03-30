@@ -1,4 +1,4 @@
-
+import discord
 import os
 import random
 import traceback
