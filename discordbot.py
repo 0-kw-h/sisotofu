@@ -43,4 +43,14 @@ async def yankeee(ctx):
     yankeee = "はらたつ"
     await ctx.send(yankeee)
 
+@bot.command()
+async def sigure(ctx):
+    si = "れこそそさんだ"
+    await ctx.send(si)
+
+@bot.command()
+async def recososo(ctx):
+    re = "しぐれかー"
+    await ctx.send(re)
+
 bot.run(token)
