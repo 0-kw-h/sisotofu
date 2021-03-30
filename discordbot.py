@@ -21,7 +21,8 @@ async def DV(ctx):
 
 @bot.command()
 async def yukka(ctx):
-    await ctx.send('ゆっかさんだー')
+    yukka = 'ゆっかさんだー'
+    await client.send_messeage(messeage.channel yukka)
 
 @bot.command()
 async def dice(ctx):
