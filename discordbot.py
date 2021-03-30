@@ -23,5 +23,8 @@ async def DV(ctx):
 async def yukka(ctx):
     await ctx.send('ゆっかさんだー')
 
+@bot.command()
+async def dice(ctx):
+    await ctx.send(random.uniform(0,100))
 
 bot.run(token)
