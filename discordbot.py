@@ -25,10 +25,4 @@ async def yukka(ctx):
     await ctx.send('ゆっかさんだー')
 
 
-@bot.command()
-async def dice(ctx):
-    info = parse('dice {}d{} {}', message.content)
-    res = np.random.randint(info[0], int(info[1]))
-    await ctx.send(res)
-
 bot.run(token)
