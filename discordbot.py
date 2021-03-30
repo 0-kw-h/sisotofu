@@ -30,7 +30,7 @@ async def sisotofu(ctx):
 
 @bot.command()
 async def stella(ctx):
-    s = 'すてら'
-    await ctx.sesnd(s)
+    s = "すてら"
+    await ctx.send(s)
 
 bot.run(token)
