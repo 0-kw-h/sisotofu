@@ -1,6 +1,5 @@
 from discord.ext import commands
 import os
-import numpy as np
 import traceback
 
 bot = commands.Bot(command_prefix='/')
