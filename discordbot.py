@@ -25,6 +25,6 @@ async def yukka(ctx):
 
 @bot.command()
 async def dice(ctx):
-    await ctx.send(random.uniform(0,100))
+    await ctx.send("らんだむ")
 
 bot.run(token)
