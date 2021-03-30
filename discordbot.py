@@ -1,9 +1,11 @@
 from discord.ext import commands
 import os
 import traceback
+import random
 
 bot = commands.Bot(command_prefix='/')
-token = os.environ['DISCORD_BOT_TOKEN']
+token = os.environ['DISCORD_BOT_TOKEN]
+yukkarep = ['ゆっかさんだー','殴らないで……']
 
 
 @bot.event
@@ -15,7 +17,7 @@ async def on_command_error(ctx, error):
 
 @bot.command()
 async def yukka(ctx):
-    await ctx.send('ゆっかさんだー')
+    await ctx.send(random.choice(yukkarep))
 
 
 bot.run(token)
