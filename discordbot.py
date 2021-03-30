@@ -33,4 +33,14 @@ async def stella(ctx):
     s = "すてら"
     await ctx.send(s)
 
+@bot.command()
+async def maha(ctx):
+    m = "まはさんなら大丈夫ですよ"
+    await ctx.send(m)
+
+@bot.command()
+async def yankeee(ctx):
+    yankeee = "はらたつ"
+    await ctx.send(yankeee)
+
 bot.run(token)
