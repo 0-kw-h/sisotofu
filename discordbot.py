@@ -1,5 +1,6 @@
 from discord.ext import commands
 import os
+import numpy as num
 import traceback
 
 bot = commands.Bot(command_prefix='/')
@@ -15,16 +16,19 @@ async def on_command_error(ctx, error):
 async def sisotofu(ctx):
     await ctx.send('くそがよぉ')
 
-
 @bot.command()
 async def DV(ctx):
     await ctx.send('殴らないで……')
-
 
 @bot.command()
 async def yukka(ctx):
     await ctx.send('ゆっかさんだー')
 
 
+@bot.command()
+async def dice(ctx):
+    info = parse('dice {}d{} {}', message.content)
+    res = np.random.randint(info[0], int(info[1]))
+    await ctx.send(res)
 
 bot.run(token)
