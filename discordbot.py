@@ -28,7 +28,8 @@ async def dice(ctx,diceinp):
     dicenum = diceinp.split('d')
     ans = 0
     a = dicenum[0]
-    await ctx.send(a)
+    b = dicenum[1]
+    await ctx.send(b)
         
 @bot.command()
 async def sisotofu(ctx):
