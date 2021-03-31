@@ -30,7 +30,7 @@ async def dice(ctx,diceinp):
     a = int(dicenum[0])
     b = int(dicenum[1])
     for i in range(a):
-      ans.append(random.randint(0,b))
+      ans.append(random.randint(1,b))
     diceres = sum(ans) 
     await ctx.send(diceres)
     await ctx.send(ans)
