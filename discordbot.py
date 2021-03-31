@@ -26,10 +26,12 @@ async def yukka(ctx):
 @bot.command()
 async def dice(ctx,diceinp):
     dicenum = diceinp.split('d')
-    ans = 0
+    ans = []
     a = int(dicenum[0])
     b = int(dicenum[1])
-    ans += random.randint(0,b)
+    for i in range(a):
+      ans.append(random.randint(0,b))
+    diceres = sum(ans) 
     await ctx.send(ans)
         
 @bot.command()
