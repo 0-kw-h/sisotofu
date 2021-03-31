@@ -29,7 +29,8 @@ async def dice(ctx,diceinp):
     ans = 0
     a = dicenum[0]
     b = dicenum[1]
-    await ctx.send(b)
+    ans += random.randint(0,b)
+    await ctx.send(ans)
         
 @bot.command()
 async def sisotofu(ctx):
