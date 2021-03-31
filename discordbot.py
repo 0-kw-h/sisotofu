@@ -75,4 +75,11 @@ async def papa(ctx):
 async def roypop(ctx):
     roy = "ろいぽっぷさんいい声"
     await ctx.send(roy)
+
+@bot.command()
+async def tanaka(ctx):
+    tanaka = '田中台パンしてる？？？？？？？？？？'
+    await ctx.send(tanaka)
+    
 bot.run(token)
+
