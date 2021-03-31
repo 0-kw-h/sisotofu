@@ -27,9 +27,8 @@ async def yukka(ctx):
 async def dice(ctx,diceinp):
     dicenum = diceinp.split('d')
     ans = 0
-    for i in range(dicenum[0]):
-        ans += random.randint(0,dicenum[1])
-    await ctx.send(ans)
+    a = dicenum[0]
+    await ctx.send(a)
         
 @bot.command()
 async def sisotofu(ctx):
