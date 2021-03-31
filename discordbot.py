@@ -1,4 +1,5 @@
 from discord.ext import commands
+import discord
 import os
 import re
 import traceback
