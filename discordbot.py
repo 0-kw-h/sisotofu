@@ -1,5 +1,4 @@
 from discord.ext import commands
-import discord
 import os
 import re
 import traceback
@@ -25,10 +24,8 @@ async def yukka(ctx):
     await ctx.send(ya)
 
 @bot.event
-async def on_message(message):
-    if message.author != bot.user:
-    if message.content.startswith == "/dice":
-      await ctx.send_message('100')
+async def dice(ctx,arg):
+      await ctx.send(arg)
         
 @bot.command()
 async def sisotofu(ctx):
