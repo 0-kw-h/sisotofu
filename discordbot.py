@@ -23,8 +23,8 @@ async def yukka(ctx):
     await ctx.send(ya)
 
 @bot.command()
-async def dice(ctx):
-    await ctx.send(random.randint(0,100))
+async def dice(ctx, a):
+    await ctx.send(random.randint(0,a))
 
 @bot.command()
 async def sisotofu(ctx):
