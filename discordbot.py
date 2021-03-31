@@ -27,8 +27,8 @@ async def yukka(ctx):
 async def dice(ctx,diceinp):
     dicenum = diceinp.split('d')
     ans = 0
-    a = dicenum[0]
-    b = dicenum[1]
+    a = int(dicenum[0])
+    b = int(dicenum[1])
     ans += random.randint(0,b)
     await ctx.send(ans)
         
