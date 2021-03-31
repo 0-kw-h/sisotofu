@@ -13,6 +13,10 @@ async def on_command_error(ctx, error):
     await ctx.send(error_msg)
 
 @bot.command()
+async def nu(ctx):
+    await ctx.send('ここはJP鯖じゃないんよぉ')
+    
+@bot.command()
 async def yukka(ctx):
     yukkarep = ['ゆっかさんだぁ', '殴らないで……', 'ゆっかさん寝た？','ゆっかさん寝てください','ゆっかさん！','ゆっかさん…いじめないで…いたいょ…','ゆっかさんにいたずらしたいなあ','しそはDVされてる側なんです','ごめんなさい……','ゆっかさん？？？？？？','おはようございますゆっかさん','ゆっかさんもしかしてしそ以外にもDVしてるんですか…？','ゆっかさんとしそ不仲説；；']
     ya = random.choice(yukkarep)
@@ -39,12 +43,12 @@ async def maha(ctx):
     await ctx.send(m)
 
 @bot.command()
-async def yankeee(ctx):
+async def yankee(ctx):
     yankeee = "はらたつ"
     await ctx.send(yankeee)
 
 @bot.command()
-async def sigure(ctx):
+async def shigure(ctx):
     si = "れこそそさんだ"
     await ctx.send(si)
 
@@ -52,5 +56,10 @@ async def sigure(ctx):
 async def recososo(ctx):
     re = "しぐれかー"
     await ctx.send(re)
+
+@bot.command()
+async def papa(ctx):
+    pa = "ぱっっっぱぱっぱああああ！！！！！！！！"
+    await ctx.send(pa)
 
 bot.run(token)
