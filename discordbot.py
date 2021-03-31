@@ -1,9 +1,11 @@
 from discord.ext import commands
 import os
+import re
 import traceback
 import random
 
 bot = commands.Bot(command_prefix='/')
+client = discord.Client()
 token = os.environ['DISCORD_BOT_TOKEN']
 
 @bot.event
@@ -22,10 +24,16 @@ async def yukka(ctx):
     ya = random.choice(yukkarep)
     await ctx.send(ya)
 
-@bot.command()
-async def dice(ctx, a):
-    await ctx.send(random.randint(0,a))
-
+@client.event
+async def on_message(message):
+    if message.author != client.user:
+    if message.content.startswith == "/dice":
+      dice = message.split('d')
+      ans = 0
+      for i in range(dice[0])
+        ans += random.randint(0,dice[1])
+      await client.send_message(ans)
+        
 @bot.command()
 async def sisotofu(ctx):
     sisorep = ['くそがよぉ','泣いた']
