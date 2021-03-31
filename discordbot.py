@@ -32,7 +32,8 @@ async def dice(ctx,diceinp):
     for i in range(a):
       ans.append(random.randint(0,b))
     diceres = sum(ans) 
-    await ctx.send(diceres + '/n'+ ans)
+    await ctx.send(diceres)
+    await ctx.send(ans)
         
 @bot.command()
 async def sisotofu(ctx):
