@@ -23,7 +23,7 @@ async def yukka(ctx):
     ya = random.choice(yukkarep)
     await ctx.send(ya)
 
-@bot.event
+@bot.command()
 async def dice(ctx,arg):
       await ctx.send(arg)
         
