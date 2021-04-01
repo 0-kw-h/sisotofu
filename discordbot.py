@@ -73,13 +73,18 @@ async def papa(ctx):
 
 @bot.command()
 async def roypop(ctx):
-    roy = "ろいぽっぷさんいい声"
+    roy = "ろいぽっぷさんは何を……"
     await ctx.send(roy)
 
 @bot.command()
 async def tanaka(ctx):
     tanaka = '田中台パンしてる？？？？？？？？？？'
     await ctx.send(tanaka)
-    
+
+@bot.command()
+async def haz(ctx):
+    haz = 'はずさんが チョコレートケーキを 食べたから 3月18日は はず誕生日'
+    await ctx.send(haz)
+
 bot.run(token)
 
