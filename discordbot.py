@@ -1,3 +1,4 @@
+import discord
 from discord.ext import commands
 import os
 import re
@@ -43,7 +44,7 @@ async def dice(ctx,diceinp):
         
 @bot.command()
 async def sisotofu(ctx):
-    sisorep = ['くそがよぉ','泣いた'.'お腹すいた……']
+    sisorep = ['くそがよぉ','泣いた','お腹すいた……']
     sa = random.choice(sisorep)
     await ctx.send(sa)
 
