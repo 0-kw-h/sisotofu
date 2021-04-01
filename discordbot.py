@@ -18,7 +18,7 @@ async def nu(ctx):
     await ctx.send('ここはJP鯖じゃないんよぉ')
 
 @bot.command()
-async def sleep(ctx,mention: discord.Member):
+async def sleep(ctx,mention):
     mentions = message.mentions
     print(ctx.guild.voice_channels)
     await ctx.send(str(mentions)+'　おやすみなさい')
