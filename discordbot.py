@@ -24,13 +24,7 @@ async def on_command_error(ctx, error):
 async def nu(ctx):
     await ctx.send('ここはJP鯖じゃないんよぉ')
 
-@bot.command()
-async def sleep(ctx,afk):
-    channel_mem = [i for i in ctx.author.voice.channel.members] # VCメンバリスト取得
-    await ctx.send(str(afk)+'　おやすみなさい')
-    await ctx.send(channel_men)
-    name = [member.name for member in ctx.author.voice.channel.members]
-    await ctx.send(name)
+
     
 @bot.command()
 async def yukka(ctx):
