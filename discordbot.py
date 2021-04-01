@@ -18,7 +18,7 @@ async def nu(ctx):
     await ctx.send('ここはJP鯖じゃないんよぉ')
 
 @bot.command()
-async def afk(ctx,mention):
+async def sleep(ctx,mention):
     await mention.move_to(NONE)
     
 @bot.command()
