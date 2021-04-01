@@ -27,9 +27,11 @@ async def nu(ctx):
 @bot.command()
 async def sleep(ctx,afk):
     admin = str(afk)
-    repo = [member.id for member in afk.mentions]
     await ctx.send(admin)
-    await ctx.send(repo)
+    
+@client.command()
+async def suso(ctx, arg1='m001', arg2='1.0', arg3='90', arg4: discord.Member):
+    await ctx.send(arg4.id)
 
     
 @bot.command()
