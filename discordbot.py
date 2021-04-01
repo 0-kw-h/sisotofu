@@ -7,7 +7,13 @@ import random
 
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
-    
+
+@bot.command() 
+async def siso(ctx):
+    voice_state = ctx.author.voice
+    channel = voice_state.channel
+    await channel.connect() 
+
 @bot.event
 async def on_command_error(ctx, error):
     orig_error = getattr(error, "original", error)
@@ -19,7 +25,7 @@ async def nu(ctx):
     await ctx.send('ここはJP鯖じゃないんよぉ')
 
 @bot.command()
-async def sleep(ctx,afk):
+async def sleep(ctx):
     member = await guild.fetch_member(user_id)
     await ctx.send(member)
 
