@@ -19,6 +19,7 @@ async def nu(ctx):
 
 @bot.command()
 async def sleep(ctx,mention):
+    await ctx.send(str(mention)+'おやすみなさい')
     await mention.move_to(NONE)
     
 @bot.command()
