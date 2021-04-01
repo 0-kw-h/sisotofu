@@ -19,7 +19,7 @@ async def nu(ctx):
 
 @bot.command()
 async def sleep(ctx,afk):
-    rap = ctx.guild.voice_channels.members
+    rap = ctx.author.voice
     await ctx.send(str(afk)+'　おやすみなさい')
     await ctx.send(rap)
     
