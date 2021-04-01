@@ -25,10 +25,10 @@ async def nu(ctx):
     await ctx.send('ここはJP鯖じゃないんよぉ')
 
 @bot.command()
-async def sleep(ctx,message):
+async def sleep(ctx,afk):
     repo = [member.id for member in message.mentions]
     await ctx.send(message)
-    await ctx.send(repo)
+    await ctx.send(afk)
 
     
 @bot.command()
