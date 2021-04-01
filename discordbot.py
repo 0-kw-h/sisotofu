@@ -18,11 +18,10 @@ async def nu(ctx):
     await ctx.send('ここはJP鯖じゃないんよぉ')
 
 @bot.command()
-async def sleep(ctx,mention):
+async def sleep(ctx,mention: discord.Member):
     mentions = message.mentions
     await ctx.send(str(mentions)+'　おやすみなさい')
-    member = message.guild.get_member(mentions[0].id)
-    await member.move_to(NONE)
+    await ctx.send(str(member.id))
     
 @bot.command()
 async def yukka(ctx):
