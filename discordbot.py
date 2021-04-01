@@ -10,6 +10,12 @@ token = os.environ['DISCORD_BOT_TOKEN']
 @bot.command() 
 async def siso(ctx):
     voice_state = ctx.author.voice
+    if (not voice_state) or (not voice_state.channel):
+        #もし送信者がどこのチャンネルにも入っていないなら
+        await ctx.send("先にボイスチャンネルに入っている必要があります。")
+        return
+    channel = voice_state.channel #送信者のチャンネル
+    await channel.connect() 
     
 @bot.event
 async def on_command_error(ctx, error):
