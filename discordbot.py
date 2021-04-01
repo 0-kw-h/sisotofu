@@ -27,8 +27,9 @@ async def nu(ctx):
 @bot.command()
 async def sleep(ctx,afk):
     repo = [member.id for member in message.mentions]
-    await ctx.send(message)
-    await ctx.send(afk)
+    admin = afk
+    await ctx.send(admin)
+    await ctx.send(repo)
 
     
 @bot.command()
