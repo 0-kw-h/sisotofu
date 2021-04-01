@@ -7,7 +7,6 @@ import random
 
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
-
     
 @bot.event
 async def on_command_error(ctx, error):
@@ -21,11 +20,9 @@ async def nu(ctx):
 
 @bot.command()
 async def sleep(ctx,afk):
-    channel_mem = [i for i in ctx.author.voice.channel.members] # VCメンバリスト取得
-    await ctx.send(str(afk)+'　おやすみなさい')
-    await ctx.send(channel_men)
-    name = [member.name for member in ctx.author.voice.channel.members]
-    await ctx.send(name)
+    member = await guild.fetch_member(user_id)
+    await ctx.send(member)
+
     
 @bot.command()
 async def yukka(ctx):
