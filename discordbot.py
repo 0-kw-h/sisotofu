@@ -18,9 +18,9 @@ async def nu(ctx):
     await ctx.send('ここはJP鯖じゃないんよぉ')
 
 @bot.command()
-async def sleep(ctx,mention):
+async def sleep(ctx,afk):
     print(ctx.guild.voice_channels)
-    await ctx.send(str(mentions)+'　おやすみなさい')
+    await ctx.send(str(afk)+'　おやすみなさい')
     
 @bot.command()
 async def yukka(ctx):
