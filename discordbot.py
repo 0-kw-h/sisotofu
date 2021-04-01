@@ -20,6 +20,7 @@ async def nu(ctx):
 @bot.command()
 async def sleep(ctx,mention: discord.Member):
     mentions = message.mentions
+    print(ctx.guild.voice_channels)
     await ctx.send(str(mentions)+'　おやすみなさい')
     await ctx.send(str(member.id))
     
