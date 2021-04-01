@@ -19,8 +19,10 @@ async def nu(ctx):
 
 @bot.command()
 async def sleep(ctx,mention):
-    await ctx.send(str(mention)+'おやすみなさい')
-    await mention.move_to(NONE)
+    mentions = message.mentions
+    await ctx.send(str(mentions)+'　おやすみなさい')
+    member = message.guild.get_member(mentions[0].id)
+    await member.move_to(NONE)
     
 @bot.command()
 async def yukka(ctx):
@@ -48,7 +50,7 @@ async def sisotofu(ctx):
 
 @bot.command()
 async def stella(ctx):
-    s = "すてら"
+    s = "すてらー！！！！"
     await ctx.send(s)
 
 @bot.command()
