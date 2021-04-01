@@ -28,12 +28,7 @@ async def nu(ctx):
 async def sleep(ctx,afk):
     admin = str(afk)
     await ctx.send(admin)
-    
-@bot.command()
-async def suso(ctx, arg1='m001', arg2='1.0', arg3='90', arg4: discord.Member):
-    await ctx.send(arg4.id)
-
-    
+ 
 @bot.command()
 async def yukka(ctx):
     yukkarep = ['ゆっかさんの好きにしてください','ゆっかさんのこと、忘れないよ…','ゆっかさん違うんです','ゆっかさん買ってくれるの……？','ゆっかさんたすけて……','ゆっかさんもしかしてしそ以外にもDVしてるんですか…？','ゆっかさんだぁ', '殴らないで……', 'ゆっかさん寝た？','ゆっかさん寝てください','ゆっかさん！','ゆっかさん…いじめないで…いたいょ…','ゆっかさんにいたずらしたいなあ','しそはDVされてる側なんです','ごめんなさい……','ゆっかさん？？？？？？','おはようございますゆっかさん','ゆっかさんもしかしてしそ以外にもDVしてるんですか…？','ゆっかさんとしそ不仲説；；']
