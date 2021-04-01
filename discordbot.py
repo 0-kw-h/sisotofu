@@ -20,9 +20,11 @@ async def nu(ctx):
 @bot.command()
 async def sleep(ctx,afk):
     state = ctx.author.voice # コマンド実行者のVCステータスを取得
+    reo = state.channel.members
     channel_mem = [i for i in state.channel.members] # VCメンバリスト取得
     lenf = len(channel_mem)
     await ctx.send(str(afk)+'　おやすみなさい')
+    await ctx.send(reo)
     await ctx.send(state)
     await ctx.send(channel_men)
     
