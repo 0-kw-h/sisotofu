@@ -21,7 +21,7 @@ async def nu(ctx):
 async def sleep(ctx,afk):
     rap = ctx.author.voice.channel.members
     await ctx.send(str(afk)+'　おやすみなさい')
-    await ctx.send(rap)
+    await ctx.send(len(rap))
     
 @bot.command()
 async def yukka(ctx):
