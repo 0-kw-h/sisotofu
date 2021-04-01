@@ -7,6 +7,10 @@ import random
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
+@bot.command() 
+async def siso(ctx):
+    voice_state = ctx.author.voice
+    
 @bot.event
 async def on_command_error(ctx, error):
     orig_error = getattr(error, "original", error)
@@ -27,7 +31,7 @@ async def sleep(ctx,afk):
     
 @bot.command()
 async def yukka(ctx):
-    yukkarep = ['ゆっかさんのこと、忘れないよ…','ゆっかさん違うんです','ゆっかさん買ってくれるの……？','ゆっかさんたすけて……','ゆっかさんもしかしてしそ以外にもDVしてるんですか…？','ゆっかさんだぁ', '殴らないで……', 'ゆっかさん寝た？','ゆっかさん寝てください','ゆっかさん！','ゆっかさん…いじめないで…いたいょ…','ゆっかさんにいたずらしたいなあ','しそはDVされてる側なんです','ごめんなさい……','ゆっかさん？？？？？？','おはようございますゆっかさん','ゆっかさんもしかしてしそ以外にもDVしてるんですか…？','ゆっかさんとしそ不仲説；；']
+    yukkarep = ['ゆっかさんの好きにしてください','ゆっかさんのこと、忘れないよ…','ゆっかさん違うんです','ゆっかさん買ってくれるの……？','ゆっかさんたすけて……','ゆっかさんもしかしてしそ以外にもDVしてるんですか…？','ゆっかさんだぁ', '殴らないで……', 'ゆっかさん寝た？','ゆっかさん寝てください','ゆっかさん！','ゆっかさん…いじめないで…いたいょ…','ゆっかさんにいたずらしたいなあ','しそはDVされてる側なんです','ごめんなさい……','ゆっかさん？？？？？？','おはようございますゆっかさん','ゆっかさんもしかしてしそ以外にもDVしてるんですか…？','ゆっかさんとしそ不仲説；；']
     ya = random.choice(yukkarep)
     await ctx.send(ya)
 
@@ -45,7 +49,7 @@ async def dice(ctx,diceinp):
         
 @bot.command()
 async def sisotofu(ctx):
-    sisorep = ['くそがよぉ','泣いた']
+    sisorep = ['くそがよぉ','泣いた'.'お腹すいた……']
     sa = random.choice(sisorep)
     await ctx.send(sa)
 
