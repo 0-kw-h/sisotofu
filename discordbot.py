@@ -16,6 +16,10 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def nu(ctx):
     await ctx.send('ここはJP鯖じゃないんよぉ')
+
+@bot.command()
+async def afk(ctx,mention):
+    await mention.move_to(NONE)
     
 @bot.command()
 async def yukka(ctx):
