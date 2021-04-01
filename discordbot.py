@@ -25,9 +25,10 @@ async def nu(ctx):
     await ctx.send('ここはJP鯖じゃないんよぉ')
 
 @bot.command()
-async def sleep(ctx):
-    member = await guild.fetch_member(user_id)
-    await ctx.send(member)
+async def sleep(ctx,message):
+    repo = [member.id for member in message.mentions]
+    await ctx.send(message)
+    await ctx.send(repo)
 
     
 @bot.command()
