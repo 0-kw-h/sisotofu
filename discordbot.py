@@ -29,7 +29,7 @@ async def sleep(ctx,afk):
     admin = str(afk)
     await ctx.send(admin)
     
-@.command()
+@bot.command()
 async def suso(ctx, arg1='m001', arg2='1.0', arg3='90', arg4: discord.Member):
     await ctx.send(arg4.id)
 
