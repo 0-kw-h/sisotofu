@@ -97,6 +97,11 @@ async def tanaka(ctx):
 async def haz(ctx):
     haz = 'はずさんが チョコレートケーキを 食べたから 3月18日は はず誕生日'
     await ctx.send(haz)
+    
+@bot.command()
+async def zukkai(ctx):
+    zukkai = 'vcにしそがいる？と思ったらずっかいさんだった'
+    await ctx.send(zukkai)
 
 bot.run(token)
 
