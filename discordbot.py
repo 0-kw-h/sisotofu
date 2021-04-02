@@ -8,12 +8,6 @@ import random
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
 
-@bot.command() 
-async def siso(ctx):
-    voice_state = ctx.author.voice
-    channel = voice_state.channel
-    await channel.connect() 
-
 @bot.event
 async def on_command_error(ctx, error):
     orig_error = getattr(error, "original", error)
@@ -24,10 +18,17 @@ async def on_command_error(ctx, error):
 async def nu(ctx):
     await ctx.send('ここはJP鯖じゃないんよぉ')
 
+
 @bot.command()
 async def sleep(ctx,afk):
     admin = str(afk)
-    await ctx.send(admin)
+    await ctx.send(afk + 'おやすみなさい')
+    
+@bot.command()
+async def sisohelp(ctx):
+    embed = discord.Embed(title="イカだから仕方ないですね", description="/dice ndX：X面ダイスをn回振ります")
+    embed.add.field(name='実装中',value='/sleep メンション: afkに送るコマンド',inline=false)
+    await ctx.send(embed=embed)
  
 @bot.command()
 async def yukka(ctx):
