@@ -26,9 +26,8 @@ async def sleep(ctx,afk):
     
 @bot.command()
 async def sisohelp(ctx):
-    embed = discord.Embed(title="イカだから仕方ないですね", description="/dice ndX：X面ダイスをn回振ります")
-    embed.add_field(name='実装中',value='/sleep メンション: afkに送るコマンド',inline=false)
-    await ctx.send(embed=embed)
+    sisohelp = discord.Embed(title="イカだから仕方ないですね", description="/dice ndX：X面ダイスをn回振ります")
+    await ctx.send(embed=sisohelp)
  
 @bot.command()
 async def yukka(ctx):
