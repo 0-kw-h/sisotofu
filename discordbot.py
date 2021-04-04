@@ -111,7 +111,7 @@ async def iroha(ctx):
 @bot.command()
 async def orie(ctx):
     orie = 'おりえさんのぴーちゃんかわいい'
-    await ctx.send()
+    await ctx.send(orie)
     
 @bot.command()
 async def ponz(ctx):
