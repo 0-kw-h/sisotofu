@@ -31,7 +31,7 @@ async def sisohelp(ctx):
  
 @bot.command()
 async def yukka(ctx):
-    yukkarep = ['ゆっかさんに！！！！！集中して！！！！！！！！','ゆっかさんの好きにしてください','ゆっかさんのこと、忘れないよ…','ゆっかさん違うんです','ゆっかさん買ってくれるの……？','ゆっかさんたすけて……','ゆっかさんもしかしてしそ以外にもDVしてるんですか…？','ゆっかさんだぁ', '殴らないで……', 'ゆっかさん寝た？','ゆっかさん寝てください','ゆっかさん！','ゆっかさん…いじめないで…いたいょ…','ゆっかさんにいたずらしたいなあ','しそはDVされてる側なんです','ごめんなさい……','ゆっかさん？？？？？？','おはようございますゆっかさん','ゆっかさんもしかしてしそ以外にもDVしてるんですか…？','ゆっかさんとしそ不仲説；；']
+    yukkarep = ['ゆっかさん仕事中ですか？','ゆっかさんより下だが？','やだ…売らないでゆっかさん…','そんなことしてたのしいの…？ゆっかさん怖い…','しそとうふとゆっかさんはにわとりだった…？？','ゆっかさんに！！！！！集中して！！！！！！！！','ゆっかさんの好きにしてください','ゆっかさんのこと、忘れないよ…','ゆっかさん違うんです','ゆっかさん買ってくれるの……？','ゆっかさんたすけて……','ゆっかさんもしかしてしそ以外にもDVしてるんですか…？','ゆっかさんだぁ', '殴らないで……', 'ゆっかさん寝た？','ゆっかさん寝てください','ゆっかさん！','ゆっかさん…いじめないで…いたいょ…','ゆっかさんにいたずらしたいなあ','しそはDVされてる側なんです','ごめんなさい……','ゆっかさん？？？？？？','おはようございますゆっかさん','ゆっかさんもしかしてしそ以外にもDVしてるんですか…？','ゆっかさんとしそ不仲説；；','ゆっかさん']
     ya = random.choice(yukkarep)
     await ctx.send(ya)
 
@@ -49,7 +49,7 @@ async def dice(ctx,diceinp):
         
 @bot.command()
 async def sisotofu(ctx):
-    sisorep = ['くそがよぉ','泣いた','お腹すいた……']
+    sisorep = ['くそがよぉ','泣いた','お腹すいた……','それはショタじゃないんよぉ']
     sa = random.choice(sisorep)
     await ctx.send(sa)
 
@@ -60,7 +60,7 @@ async def stella(ctx):
 
 @bot.command()
 async def maha(ctx):
-    m = "まはさん"
+    m = "しそちゃん 無視とか まはさん ないわ"
     await ctx.send(m)
 
 @bot.command()
@@ -95,7 +95,7 @@ async def tanaka(ctx):
 
 @bot.command()
 async def haz(ctx):
-    haz = 'はずさんが チョコレートケーキを 食べたから 3月18日は はず誕生日'
+    haz = 'はずさんはびじねすようきゃらしいです'
     await ctx.send(haz)
     
 @bot.command()
@@ -103,5 +103,22 @@ async def zukkai(ctx):
     zukkai = 'vcにしそがいる？と思ったらずっかいさんだった'
     await ctx.send(zukkai)
 
+@bot.command()
+async def iroha(ctx):
+    iroha = 'いろはさんの社内と新宿3丁目に垂れ流されるしその声'
+    await ctx.send(iroha)
+    
+@bot.command()
+async def orie(ctx):
+    orie = 'おりえさんのぴーちゃんかわいい'
+    await ctx.send()
+    
+@bot.command()
+async def ponz(ctx):
+    ponz = ['ぽんず殺す','ぽんずうるせえ']
+    poz = random.choice(ponz)
+    await ctx.send(poz)
+
+    
 bot.run(token)
 
