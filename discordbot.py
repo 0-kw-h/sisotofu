@@ -31,7 +31,7 @@ async def sisohelp(ctx):
  
 @bot.command()
 async def yukka(ctx):
-    yukkarep = ['ゆっかさん仕事中ですか？','ゆっかさんより下だが？','やだ…売らないでゆっかさん…','そんなことしてたのしいの…？ゆっかさん怖い…','しそとうふとゆっかさんはにわとりだった…？？','ゆっかさんに！！！！！集中して！！！！！！！！','ゆっかさんの好きにしてください','ゆっかさんのこと、忘れないよ…','ゆっかさん違うんです','ゆっかさん買ってくれるの……？','ゆっかさんたすけて……','ゆっかさんもしかしてしそ以外にもDVしてるんですか…？','ゆっかさんだぁ', '殴らないで……', 'ゆっかさん寝た？','ゆっかさん寝てください','ゆっかさん！','ゆっかさん…いじめないで…いたいょ…','ゆっかさんにいたずらしたいなあ','しそはDVされてる側なんです','ごめんなさい……','ゆっかさん？？？？？？','おはようございますゆっかさん','ゆっかさんもしかしてしそ以外にもDVしてるんですか…？','ゆっかさんとしそ不仲説；；','ゆっかさん']
+    yukkarep = ['ゆっかさんらじおとかは','さっきまで私vcにゆっかさんといたはず','ゆっかさん今日もPC切り忘れてるなあ','え？なんでゆっかさんもAFKいるんだ？','ゆっかさん仕事中ですか？','ゆっかさんより下だが？','やだ…売らないでゆっかさん…','そんなことしてたのしいの…？ゆっかさん怖い…','しそとうふとゆっかさんはにわとりだった…？？','ゆっかさんに！！！！！集中して！！！！！！！！','ゆっかさんの好きにしてください','ゆっかさんのこと、忘れないよ…','ゆっかさん違うんです','ゆっかさん買ってくれるの……？','ゆっかさんたすけて……','ゆっかさんもしかしてしそ以外にもDVしてるんですか…？','ゆっかさんだぁ', '殴らないで……', 'ゆっかさん寝た？','ゆっかさん寝てください','ゆっかさん！','ゆっかさん…いじめないで…いたいょ…','ゆっかさんにいたずらしたいなあ','しそはDVされてる側なんです','ごめんなさい……','ゆっかさん？？？？？？','おはようございますゆっかさん','ゆっかさんもしかしてしそ以外にもDVしてるんですか…？','ゆっかさんとしそ不仲説；；','ゆっかさん']
     ya = random.choice(yukkarep)
     await ctx.send(ya)
 
@@ -49,18 +49,19 @@ async def dice(ctx,diceinp):
         
 @bot.command()
 async def sisotofu(ctx):
-    sisorep = ['くそがよぉ','泣いた','お腹すいた……','それはショタじゃないんよぉ']
+    sisorep = ['くそがよぉ','泣いた','お腹すいた……','非正規ルートおねぇさんでーす','しそは数学のおねぇさんなので']
     sa = random.choice(sisorep)
     await ctx.send(sa)
 
 @bot.command()
 async def stella(ctx):
-    s = "すてらー！！！！"
-    await ctx.send(s)
+    stella = ['焼くぞこのイカ野郎','すてらー！！！！','いっそのこと、いかやきにしよう']
+    ste = random.choice(stella)
+    await ctx.send(ste)
 
 @bot.command()
 async def maha(ctx):
-    m = "しそちゃん 無視とか まはさん ないわ"
+    m = "まはさんいないのめずらしいな"
     await ctx.send(m)
 
 @bot.command()
@@ -75,8 +76,9 @@ async def shigure(ctx):
 
 @bot.command()
 async def recososo(ctx):
-    re = "しぐれかー"
-    await ctx.send(re)
+    re = ['時雨に傘で殴られかけました','しぐれかー']
+    recososo = random.choice(re)
+    await ctx.send(recososo)
 
 @bot.command()
 async def papa(ctx):
@@ -95,30 +97,28 @@ async def tanaka(ctx):
 
 @bot.command()
 async def haz(ctx):
-    haz = 'はずさんはびじねすようきゃらしいです'
+    haz = 'はずさんがいっぱいらじおすれば無問題ですよ'
     await ctx.send(haz)
     
 @bot.command()
 async def zukkai(ctx):
-    zukkai = 'vcにしそがいる？と思ったらずっかいさんだった'
+    zukkai = 'ずっかいシェフに来てもらいましょう'
     await ctx.send(zukkai)
 
 @bot.command()
 async def iroha(ctx):
-    iroha = 'いろはさんの社内と新宿3丁目に垂れ流されるしその声'
+    iroha = 'いろはさんはまじでやばい'
     await ctx.send(iroha)
     
 @bot.command()
 async def orie(ctx):
     orie = 'おりえさんのぴーちゃんかわいい'
     await ctx.send(orie)
-    
-@bot.command()
-async def ponz(ctx):
-    ponz = ['ぽんず殺す','ぽんずうるせえ']
-    poz = random.choice(ponz)
-    await ctx.send(poz)
 
+@bot.command()
+async def homare(ctx):
+    homare = "ほまれさんがとんでもないこといってる…"
+    await ctx.send(homare)
     
 bot.run(token)
 
