@@ -26,7 +26,7 @@ async def sleep(ctx,afk):
     
 @bot.command()
 async def sisohelp(ctx):
-    sisohelp = discord.Embed(title="イカだから仕方ないですね", description="/dice ndX：X面ダイスをn回振ります")
+    sisohelp = discord.Embed(title="sisotofuの扱い方", description="/dice ndX：X面ダイスをn回振ります")
     await ctx.send(embed=sisohelp)
  
 @bot.command()
@@ -87,7 +87,8 @@ async def papa(ctx):
 
 @bot.command()
 async def roypop(ctx):
-    roy = "ろいぽっぷさんは何を……"
+    roypop = ["ろいぽっぷさんは何を……",'ろいぽっぷさん一回海に落ちなよ']
+    roy = random.choice(roypop)
     await ctx.send(roy)
 
 @bot.command()
