@@ -55,7 +55,7 @@ async def sisotofu(ctx):
 
 @bot.command()
 async def stella(ctx):
-    stella = ['焼くぞこのイカ野郎','すてらー！！！！','いっそのこと、いかやきにしよう']
+    stella = ['すてらー！！！！','いっそのこと、いかやきにしよう']
     ste = random.choice(stella)
     await ctx.send(ste)
 
@@ -122,4 +122,3 @@ async def homare(ctx):
     await ctx.send(homare)
     
 bot.run(token)
-
