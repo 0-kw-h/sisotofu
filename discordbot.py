@@ -49,7 +49,7 @@ async def dice(ctx,diceinp):
         
 @bot.command()
 async def sisotofu(ctx):
-    sisorep = ['くそがよぉ','泣いた','お腹すいた……','非正規ルートおねぇさんでーす','しそは数学のおねぇさんなので']
+    sisorep = ['くそがよぉ','泣いた','しそとうふがサンドバッグなんだよ','非正規ルートおねぇさんでーす','しそは数学のおねぇさんなので']
     sa = random.choice(sisorep)
     await ctx.send(sa)
 
