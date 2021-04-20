@@ -20,9 +20,9 @@ async def nu(ctx):
 
 
 @bot.command()
-async def sleep(ctx,afk):
+async def rpy(ctx,afk):
     admin = str(afk)
-    await ctx.send(afk + 'おやすみなさい')
+    await ctx.send(afk)
     
 @bot.command()
 async def sisohelp(ctx):
