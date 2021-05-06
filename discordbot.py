@@ -87,7 +87,7 @@ async def roypop(ctx):
     await ctx.send(roy)
 
 @bot.command()
-async def meigen(ctx):
+async def kiroku(ctx):
     meigen = ["ろいぽっぷ「いや～そこ二狼かぁ～…（三人盤面）」",'すてら「狐につつまれる」',"はず「茨城はいばらきだけど(ﾄﾞﾔｧ)」",'ぱぱ「静かなる世界に唐突なウミウシ！」',"織江「やっぱ優しい中トロは最高でした！」","まは「心に傷を負った妖精がここに飛んでいます」"]
     mei = random.choice(roypop)
     await ctx.send(mei)
