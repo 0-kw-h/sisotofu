@@ -89,7 +89,7 @@ async def roypop(ctx):
 @bot.command()
 async def kiroku(ctx):
     meigen = ["ろいぽっぷ「いや～そこ二狼かぁ～…（三人盤面）」",'すてら「狐につつまれる」',"はず「茨城はいばらきだけど(ﾄﾞﾔｧ)」",'ぱぱ「静かなる世界に唐突なウミウシ！」',"織江「やっぱ優しい中トロは最高でした！」","まは「心に傷を負った妖精がここに飛んでいます」"]
-    mei = random.choice(roypop)
+    mei = random.choice(meigen)
     await ctx.send(mei)
 
 
@@ -139,7 +139,7 @@ async def mochimura(ctx):
 @bot.command()
 async def rarasora(ctx):
     rarasora = ['ららそらさんやっちまえ！',"ららそらさんだ"]
-    sora = random.choice(mochimura)
+    sora = random.choice(rarasora)
     await ctx.send(sora)
     
 bot.run(token)
