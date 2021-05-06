@@ -76,7 +76,7 @@ async def recososo(ctx):
 
 @bot.command()
 async def papa(ctx):
-    papa = ["ぱっっっぱぱっぱああああ！！！！！！！！","ねえぱぱ"]
+    papa = ["ぱっっっぱぱっぱああああ！！！！！！！！","ぱっっっぱぱっぱああああ！！！！！！！！"]
     pa = random.choice(papa)
     await ctx.send(pa)
 
@@ -108,7 +108,8 @@ async def iroha(ctx):
     
 @bot.command()
 async def orie(ctx):
-    orie = 'おりえさんのぴーちゃんかわいい'
+    orie = ['おりえさんのぴーちゃんかわいい']
+    
     await ctx.send(orie)
 
 @bot.command()
@@ -127,6 +128,11 @@ async def mochimura(ctx):
     mochimura = ['いや、もちにきが急に｢どーも。にじさんじ所属バーチャルライバー…｣って言い出した','いや、もちにきが急に｢どーも。にじさんじ所属バーチャルライバー…｣って言い出した']
     mochi = random.choice(mochimura)
     await ctx.send(mochi)
-
+    
+@bot.command()
+async def rarasora(ctx):
+    rarasora = ['ららそらさんやっちまえ！',"ららそらさんだ"]
+    sora = random.choice(mochimura)
+    await ctx.send(sora)
     
 bot.run(token)
