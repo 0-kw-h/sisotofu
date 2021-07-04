@@ -11,7 +11,7 @@ token = os.environ['DISCORD_BOT_TOKEN']
 @bot.event
 async def on_command_error(ctx, error):
     orig_error = getattr(error, "original", error)
-    error_msg = 'しそとうふbotは正常です'
+    error_msg = '縺励◎縺ｨ繝ｼ縺ｵ'
     await ctx.send(error_msg)
 
 @bot.command()
@@ -49,7 +49,7 @@ async def sisotofu(ctx):
 
 @bot.command()
 async def stella(ctx):
-    stella = ['やろーねすてら','すてらー！！！！','いっそのこと、いかやきにしよう']
+    stella = ['すてらー！！！！','いっそのこと、いかやきにしよう']
     ste = random.choice(stella)
     await ctx.send(ste)
 
@@ -126,7 +126,7 @@ async def homare(ctx):
 
 @bot.command()
 async def poz(ctx):
-    poz = ['ぽんずさんほかのはないんですか','はずさんが チョコレートケーキを 食べたから 3月18日は はず誕生日']
+    poz = ['はずさんが チョコレートケーキを 食べたから 3月18日は はず誕生日','はずさんが チョコレートケーキを 食べたから 3月18日は はず誕生日']
     ponz = random.choice(poz)
     await ctx.send(ponz)
 
