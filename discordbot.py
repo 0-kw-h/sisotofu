@@ -15,6 +15,12 @@ async def on_command_error(ctx, error):
     await ctx.send(error_msg)
 
 @bot.command()
+async def uranai(ctx):
+    sisoura = ['運勢：末吉']
+    sisouranai = random.choice(sisoura)
+    await ctx.send(sisouranai)
+
+@bot.command()
 async def nu(ctx):
     await ctx.send('ここはJP鯖じゃないんよぉ')
 
