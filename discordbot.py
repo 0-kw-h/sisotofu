@@ -16,9 +16,12 @@ async def on_command_error(ctx, error):
 
 @bot.command()
 async def uranai(ctx):
-    sisoura = ['運勢：末吉']
+    sisoura = ['運勢：末吉','運勢：末吉','運勢：吉','運勢：吉''運勢：吉','運勢：中吉','運勢：中吉','運勢：良くない','運勢：凶','運勢：凶','運勢：凶','運勢：大凶']
+    sisourb = ['ラッキーアイテム：布団','ラッキーアイテム：布団','ラッキーアイテム：布団','ラッキーアイテム：酒','ラッキーアイテム：酒','ラッキーアイテム：しそとうふ']
     sisouranai = random.choice(sisoura)
     await ctx.send(sisouranai)
+    sisouranbi = random.choice(sisourb)
+    await ctx.send(sisouranbi)
 
 @bot.command()
 async def nu(ctx):
