@@ -33,8 +33,8 @@ async def dice(ctx,diceinp):
     for i in range(a):
       ans.append(random.randint(1,b))
     diceres = sum(ans) 
-    anss = "/spoiler" + str(ans)
-    diceress = "/spoiler" + str(diceres)
+    anss = "/spoiler message" + str(ans)
+    diceress = "/spoiler message:" + str(diceres)
     await ctx.send(diceress)
     await ctx.send(anss)
         
