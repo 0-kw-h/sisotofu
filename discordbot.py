@@ -33,7 +33,7 @@ async def dice(ctx,diceinp):
     for i in range(a):
       ans.append(random.randint(1,b))
     diceres = sum(ans) 
-    await ctx.send("/spoiler  + diceres)
+    await ctx.send("/spoiler " + diceres)
     await ctx.send('/spoiler ' + ans)
         
 @bot.command()
