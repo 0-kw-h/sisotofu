@@ -33,14 +33,14 @@ async def dice(ctx,diceinp):
     for i in range(a):
       ans.append(random.randint(1,b))
     diceres = sum(ans) 
-    anss = "**" + str(ans) + "**"
+    anss = "||" + str(ans) + "||"
     diceress = "||" + str(diceres) + "||"
     await ctx.send(diceress)
     await ctx.send(anss)
         
 @bot.command()
 async def sisotofu(ctx):
-    sisorep = ['注射が痛くないわけないだろ！！！！！！！！！！！！','くそがよぉ','泣いた','はっっっっっもしやしそはイカ娘…？','おばけいらない:anger::anger::anger::anger:','最近あえーが大分浸透した気がする このまま広めてやる…','かだいおわらないのに寝落ちしたしそはこちらです']
+    sisorep = ['**注射が痛くないわけないだろ！！！！！！！！！！！！**','くそがよぉ','泣いた','はっっっっっもしやしそはイカ娘…？','おばけいらない:anger::anger::anger::anger:','最近あえーが大分浸透した気がする このまま広めてやる…','かだいおわらないのに寝落ちしたしそはこちらです']
     sa = random.choice(sisorep)
     await ctx.send(sa)
 
